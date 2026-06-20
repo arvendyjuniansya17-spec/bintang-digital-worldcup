@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BINTANG DIGITAL - World Cup Predictor 2026</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo-box">
+<img src="assets/logo-bintang-digital.png" alt="Bintang Digital">
+</div>
+
+<div class="title-box">
+<h1>BINTANG DIGITAL</h1>
+<p>FIFA World Cup 2026 Predictor</p>
+</div>
+
+</header>
+
+<section class="dashboard">
+
+<div class="card">
+<h2>48 Tim</h2>
+<p>Peserta Piala Dunia 2026</p>
+</div>
+
+<div class="card">
+<h2>12 Grup</h2>
+<p>A sampai L</p>
+</div>
+
+<div class="card">
+<h2>104 Match</h2>
+<p>Total Pertandingan</p>
+</div>
+
+<div class="card">
+<h2>Prediksi</h2>
+<p>Isi Skor Sendiri</p>
+</div>
+
+</section>
+
+<section id="groupsContainer"></section>
+<section>
+
+<h2 class="section-title">
+PERTANDINGAN GRUP
+</h2>
+
+<div id="matchesContainer"></div>
+<h2 class="section-title">
+KLASEMEN
+</h2>
+
+<div id="standingsContainer"></div>
+<h2 class="section-title">
+PILIH 32 BESAR MANUAL
+</h2>
+
+<div id="manualRound32"></div>
+<h3>DAFTAR TIM</h3>
+
+<div id="teamPool"></div>
+<div id="dragBracket"></div>
+<button
+class="save-btn"
+onclick="saveDragBracket()">
+
+BUAT ROUND 32 DARI BRACKET
+
+</button>
+
+<button
+class="save-btn"
+onclick="saveManualRound32()">
+
+SIMPAN 32 BESAR
+
+</button>
+<h2 class="section-title">
+ROUND OF 32
+</h2>
+
+<div id="round32Container"></div>
+<h2 class="section-title">ROUND OF 16</h2>
+
+<div id="round16Container"></div>
+<h2 class="section-title">
+QUARTER FINAL
+</h2>
+
+<div id="quarterFinalContainer"></div>
+<h2 class="section-title">SEMI FINAL</h2>
+
+
+<div id="semiFinalContainer"></div>
+<h2 class="section-title">FINAL</h2>
+<div id="finalContainer"></div>
+
+<h2 class="section-title">JUARA DUNIA</h2>
+<div id="championContainer"></div>
+<h2 class="section-title">
+VISUAL BRACKET
+</h2>
+
+<div class="bracket-wrapper">
+<div class="worldcup-bracket">
+
+<div id="leftBracket"></div>
+
+<div id="centerFinal"></div>
+
+<div id="rightBracket"></div>
+
+</div></section>
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
+<button
+class="save-btn"
+onclick="resetTournament()">
+
+🔄 RESET TURNAMEN
+
+</button>
+<button
+class="save-btn"
+onclick="backupPredictions()">
+
+💾 BACKUP PREDIKSI
+
+</button>
